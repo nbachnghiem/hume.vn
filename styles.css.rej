@@ -1,0 +1,33 @@
+diff a/styles.css b/styles.css	(rejected hunks)
+@@ -250,31 +250,6 @@
+   background: #3F3F3F;
+ }
+ 
+-body .product_detail .breadcumb ul {
+-  padding: 10px 16px;
+-  list-style: none;
+-}
+-
+-body .product_detail .breadcumb ul li {
+-  display: inline;
+-  color: #7A7A7A;
+-}
+-
+-body .product_detail .breadcumb ul li a {
+-  color: black;
+-}
+-
+-body .product_detail .breadcumb ul li a:hover {
+-  color: #01447e;
+-  text-decoration: underline;
+-}
+-
+-body .product_detail .breadcumb ul li + li:before {
+-  padding: 8px;
+-  color: black;
+-  content: "/\00a0";
+-}
+-
+ body footer .about {
+   margin: 67px auto 0 auto;
+   width: 80%;

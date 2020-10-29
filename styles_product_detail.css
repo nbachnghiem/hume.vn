@@ -1,0 +1,281 @@
+@media screen and (max-width: 600px) {
+  .top h1 {
+    width: 100%;
+  }
+  .top .topItems {
+    width: 100% !important;
+    background-color: aqua;
+    top: 500px;
+    right: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body img {
+  width: 100%;
+}
+
+body .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+body header {
+  padding-bottom: 24px;
+  -webkit-box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
+          box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+body header .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  text-align: center;
+}
+
+body header .top h1 {
+  margin: 0 auto;
+}
+
+body header .top .topItems {
+  position: absolute;
+  right: 154px;
+  top: 50%;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+body header .top .topItems ul {
+  list-style: none;
+  margin: auto 0 auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+body header .top .topItems ul li {
+  padding: 0 10px 0 10px;
+}
+
+body header .nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .nav .row .nav_item {
+  text-align: center;
+}
+
+body header .nav .row .nav_item a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #101010;
+}
+
+body header .nav .row .nav_item a:hover .menu {
+  z-index: 9999999999;
+  display: block !important;
+}
+
+body header .menu {
+  position: absolute;
+  display: none;
+}
+
+body header .menu .row {
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .menu .row .menu_items {
+  margin-top: 14px;
+}
+
+body header .menu .row .menu_items h1 {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #101010;
+}
+
+body header .menu .row .menu_items h2 {
+  margin-top: 13px;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #101010;
+}
+
+body header .menu .row .menu_items a {
+  margin-top: 8px;
+  display: block;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #101010;
+}
+
+body header .menu .row .menu_items img {
+  cursor: pointer;
+}
+
+body .product_detail {
+  padding-top: 96px;
+}
+
+body .product_detail .image_detail .row .image_list img {
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  margin-top: 10px;
+}
+
+body .product_detail .breadcumb ul {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+body .product_detail .breadcumb ul li {
+  display: inline;
+  color: #7A7A7A;
+}
+
+body .product_detail .breadcumb ul li a {
+  color: black;
+}
+
+body .product_detail .breadcumb ul li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+body .product_detail .breadcumb ul li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+body footer .subcribe {
+  background-color: #101010;
+  height: 80px;
+}
+
+body footer .subcribe .row {
+  margin: 0;
+}
+
+body footer .subcribe .row .subcribe_title {
+  padding-right: 41px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+body footer .subcribe .row .subcribe_title a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+body footer .subcribe .row .subcribe_input {
+  text-align: center;
+}
+
+body footer .subcribe .row .subcribe_input input {
+  height: 40px;
+}
+
+body footer .subcribe .row .subcribe_input button {
+  height: 40px;
+  border: none;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #3F3F3F;
+}
+
+body footer .about {
+  margin: 67px auto 0 auto;
+  width: 80%;
+}
+
+body footer .about ul {
+  list-style: none;
+  padding: 0;
+}
+
+body footer .about h1 {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+body footer .about a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #2A2A2A;
+}
+
+body footer .copyright {
+  margin-top: 72px;
+  background: #F3F3F3;
+  text-align: center;
+  height: 60px;
+}
+
+body footer .copyright div {
+  padding: 20px;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #5F5F5F;
+}
+/*# sourceMappingURL=styles_product_detail.css.map */
