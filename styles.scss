@@ -1,0 +1,287 @@
+body{
+    box-sizing: border-box;
+    .container-fluid{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    header{
+        padding-bottom: 24px;
+        box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
+        z-index: 1000;
+        position: sticky;
+        .top{
+            display: flex;
+            h1{
+                margin: 0 auto 0 auto;
+            }
+            .topItems{
+                ul{
+                    list-style: none;
+                    margin: auto 0 auto 0;
+                    display: flex;
+                    padding: 0;
+                    li{
+                        padding: 0 10px 0 10px;
+                    }
+                }
+            }
+        }
+        .nav{
+            justify-content: center;
+            .row{
+                .nav_item{
+                    text-align: center;
+                }
+                a{
+                    font-family: Avenir Next;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #101010;
+                }
+            }
+        }
+    }
+    .promotion{
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        .carousel-control-next {
+            right: 184px;
+            top: 772px;
+            width: 4%;
+            height: 8%;
+        }
+        .carousel-control-prev {
+            left: 184px;
+            top: 772px;
+            width: 4%;
+            height: 8%;
+        }
+    }
+    .products{
+        margin-top: 53px;
+        text-align: center;
+        h1{
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 33px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #101010;
+        }
+        .row{
+            text-align: left;
+            margin: 0 auto 0 auto;
+        }
+        .item_product_list{
+            margin-top: 37px;
+            .product_title {
+                margin-top: 17px;
+                a{
+                    font-family: Avenir Next;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.05em;
+                    color: #101010;
+                    text-decoration: none;
+                }
+                p{
+                    margin: 8px 0 0 0;
+                    font-family: Avenir Next;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.1em;
+                    color: #101010;
+                }
+            }
+        }
+      
+        button{
+            margin-top: 63px;
+            width: 257px;
+            height: 56px;
+            border: none;
+            background: #101010;
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        button:hover{
+            color: #101010;
+            background: #FFFFFF;
+            border: 1.5px solid #101010;
+        }
+    }
+    .categories{
+        margin-top: 61px;
+        h1{
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 33px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        text-align: center;
+        .row{
+            text-align: center;
+            margin: 50px auto 0 auto;
+            width: 80%;
+            .category_title{
+                margin-top: 21px;
+                a{
+                    padding-top: 21px;
+                    font-family: Avenir Next;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .information{
+        .information_content{
+            margin: 145px auto 0 auto;
+            width: 80%;
+            height: 729px;
+            background-image: url('Images/information_image.png');    
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+    }
+    .subcribe{
+        background-color: #101010;
+        height: 80px;
+        .row{
+            margin: 0;
+            .subcribe_title{
+                padding-right: 41px;
+                text-align: center;
+                color: #FFFFFF;
+                a{
+                    font-family: Avenir Next;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+                }
+            }
+            .subcribe_input{
+                text-align: center;
+                input{
+                    height: 40px;
+                }
+                button{
+                    height: 40px;
+                    border: none;
+                    font-family: Avenir Next;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 20px;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    background: #3F3F3F;
+                }
+            }
+        }
+    }
+    .product_detail{
+        .breadcumb{
+            ul{
+                padding: 10px 16px;
+                list-style: none;
+                li{
+                    display: inline;
+                    color: #7A7A7A;
+                    a{
+                        color: black;
+                    }
+                    a:hover{
+                        color: #01447e;
+                        text-decoration: underline;
+                    }
+                }
+                li+li:before{
+                    padding: 8px;
+                    color: black;
+                    content: "/\00a0";
+                }
+            } 
+
+        }
+    }
+    footer{
+        .about{
+            margin: 67px auto 0 auto;
+            width: 80%;
+            ul{
+                list-style: none;
+                padding: 0;
+            }
+            h1{
+                font-family: Avenir Next;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+            }
+            a{
+                font-family: Avenir Next;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 28px;
+                letter-spacing: 0.1em;
+                color: #2A2A2A;
+            }
+        }
+        .copyright{
+            margin-top: 72px;
+            background: #F3F3F3;
+            text-align: center;
+            height: 60px;
+            div{
+                padding: 20px;
+                font-family: Avenir Next;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.1em;
+                color: #5F5F5F;
+            }
+        }
+    }
+
+}
