@@ -1,20 +1,52 @@
-@media screen and (max-width: 600px) {
-  .top h1 {
+@media screen and (max-width: 1200px) {
+  footer .subcribe .container .row .subcribe_title {
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .top h1 {
+    margin: 0 10px !important;
     width: 100%;
   }
-  .top .topItems {
+  header .top .topItems {
     width: 100% !important;
-    background-color: aqua;
     top: 500px;
     right: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+  .product_detail .row .image_detail {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .product_detail .row .image_detail img {
+    width: 20% !important;
+    margin: 0 0 0 10px;
+    margin-top: 0 !important;
+  }
+  .product_detail .row .image_detail .col-lg-1, .product_detail .row .image_detail .col-md-1, .product_detail .row .image_detail .col-sm-1, .product_detail .row .image_detail .col-xs-1 {
+    padding: 0 !important;
+  }
+  .product_detail .row .zoom_image {
+    margin-top: 10px;
+  }
+  .specifications_detail {
+    margin-top: 20px;
+  }
 }
 
 body {
+  line-height: normal;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 100%;
 }
 
 body img {
@@ -31,7 +63,6 @@ body header {
   -webkit-box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
           box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
   z-index: 1000;
-  position: fixed;
   width: 100%;
   background-color: #FFFFFF;
 }
@@ -90,13 +121,41 @@ body header .nav .row .nav_item a {
   color: #101010;
 }
 
-body header .nav .row .nav_item a:hover .menu {
+body header .nav .row .nav_item a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+body header .nav .row .nav_item a:hover + a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ff0000;
+}
+
+body header .nav .row .nav_item a:hover + .menu {
   z-index: 9999999999;
-  display: block !important;
+  display: none !important;
+}
+
+body header .nav .row .nav_item .product_hover:hover + .menu {
+  z-index: 9999999999;
+  display: none !important;
 }
 
 body header .menu {
+  margin-top: 24px;
+  z-index: 9999999999;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
+          box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
   position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: none;
 }
 
@@ -147,58 +206,346 @@ body header .menu .row .menu_items img {
   cursor: pointer;
 }
 
-body .product_detail {
-  padding-top: 96px;
+body .breadcumb ul {
+  padding: 10px 16px;
+  list-style: none;
 }
 
-body .product_detail .image_detail .row .image_list img {
+body .breadcumb ul li {
+  display: inline;
+  color: #7A7A7A;
+}
+
+body .breadcumb ul li a {
+  color: black;
+}
+
+body .breadcumb ul li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+body .breadcumb ul li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+body .product_detail .row .image_detail img {
   cursor: pointer;
   height: auto;
   width: 100%;
   margin-top: 10px;
 }
 
-body .product_detail .breadcumb ul {
-  padding: 10px 16px;
-  list-style: none;
+body .product_detail .row .specifications_detail {
+  height: 100%;
 }
 
-body .product_detail .breadcumb ul li {
-  display: inline;
+body .product_detail .row .specifications_detail .title_content {
+  border-bottom: 0.5px solid #EDEDED;
+}
+
+body .product_detail .row .specifications_detail .title_content .product_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .product_detail .row .specifications_detail .title_content .product_title h1 {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #101010;
+}
+
+body .product_detail .row .specifications_detail .title_content .product_title .tag {
+  margin-left: 32px;
+  text-align: center;
+  padding-top: 4px;
+  width: 20%;
+  background-color: #F64E4E;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+body .product_detail .row .specifications_detail .title_content p {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
   color: #7A7A7A;
 }
 
-body .product_detail .breadcumb ul li a {
-  color: black;
+body .product_detail .row .specifications_detail .title_content h2 {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #101010;
 }
 
-body .product_detail .breadcumb ul li a:hover {
-  color: #01447e;
-  text-decoration: underline;
+body .product_detail .row .specifications_detail .color_content {
+  margin-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 0.5px solid #EDEDED;
 }
 
-body .product_detail .breadcumb ul li + li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
+body .product_detail .row .specifications_detail .color_content p {
+  margin-top: 14px;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+}
+
+body .product_detail .row .specifications_detail .color_content button {
+  margin: 0 7px 0 7px;
+  width: 25px;
+  height: 25px;
+  border: 1px;
+  border-radius: 50%;
+  border: 1px solid #EDEDED;
+}
+
+body .product_detail .row .specifications_detail .size_ccontent .size p {
+  margin-top: 14px;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+}
+
+body .product_detail .row .specifications_detail .size_ccontent .size button {
+  width: 40px;
+  height: 40px;
+  background: #F8F8F8;
+  border: 0.5px solid #707070;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .product_detail .row .specifications_detail .size_ccontent .instruct {
+  margin-top: 10px;
+}
+
+body .product_detail .row .specifications_detail .size_ccontent .instruct a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #0684E0;
+}
+
+body .product_detail .row .specifications_detail .add_to_cart {
+  margin-top: 14px;
+}
+
+body .product_detail .row .specifications_detail .add_to_cart .btn {
+  padding: 0;
+}
+
+body .product_detail .row .specifications_detail .add_to_cart .btn .btn_add {
+  width: 281px;
+  height: 56px;
+  border: none;
+  background: #101010;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+body .product_detail .row .specifications_detail .delivery_border {
+  margin-top: 26px;
+  background: #F7F8FA;
+  padding: 20px 30px;
+}
+
+body .product_detail .row .specifications_detail .delivery_border .delivery .row_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .product_detail .row .specifications_detail .delivery_border .delivery .row_1 .col_2 {
+  margin-left: 20px;
+}
+
+body .product_detail .row .specifications_detail .delivery_border .delivery .row_1 .col_2 h1 {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+body .product_detail .row .specifications_detail .delivery_border .delivery .row_1 .col_2 p {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #5D5D5D;
+}
+
+body .product_detail .row .specifications_detail .delivery_border .delivery .row_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .product_detail .row .specifications_detail .delivery_border .delivery .row_2 .col_2 {
+  margin-left: 20px;
+}
+
+body .product_detail .row .specifications_detail .delivery_border .delivery .row_2 .col_2 h1 {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+body .product_detail .row .specifications_detail .delivery_border .delivery .row_2 .col_2 a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #5D5D5D;
+}
+
+body .product_detail .row .specifications_detail .product_infomation {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .product_detail .row .specifications_detail .product_infomation p {
+  margin: 0;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #101010;
+}
+
+body .product_detail .row .specifications_detail .product_infomation i {
+  margin: auto 0 auto 9px;
+}
+
+body .reccomend_products {
+  margin-top: 66px;
+  text-align: center;
+}
+
+body .reccomend_products h1 {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #101010;
+}
+
+body .reccomend_products .row {
+  text-align: left;
+  margin: 0 auto 0 auto;
+}
+
+body .reccomend_products .row .item_product_list {
+  margin-top: 37px;
+}
+
+body .reccomend_products .row .item_product_list .product_title {
+  margin-top: 17px;
+}
+
+body .reccomend_products .row .item_product_list .product_title a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #101010;
+  text-decoration: none;
+}
+
+body .reccomend_products .row .item_product_list .product_title p {
+  margin: 8px 0 0 0;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #101010;
+}
+
+body .reccomend_products button {
+  margin-top: 63px;
+  width: 257px;
+  height: 56px;
+  border: none;
+  background: #101010;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+body .reccomend_products button:hover {
+  color: #101010;
+  background: #FFFFFF;
+  border: 1.5px solid #101010;
+}
+
+body .bottom_banner {
+  margin-top: 63px;
 }
 
 body footer .subcribe {
   background-color: #101010;
-  height: 80px;
 }
 
-body footer .subcribe .row {
-  margin: 0;
+body footer .subcribe .container {
+  padding: 20px 0;
 }
 
-body footer .subcribe .row .subcribe_title {
-  padding-right: 41px;
-  text-align: center;
+body footer .subcribe .container .row {
+  margin: auto 0;
+}
+
+body footer .subcribe .container .row .subcribe_title {
+  margin: auto 0;
+  text-align: right;
   color: #FFFFFF;
 }
 
-body footer .subcribe .row .subcribe_title a {
+body footer .subcribe .container .row .subcribe_title a {
   font-family: Avenir Next;
   font-style: normal;
   font-weight: normal;
@@ -208,16 +555,25 @@ body footer .subcribe .row .subcribe_title a {
   color: #FFFFFF;
 }
 
-body footer .subcribe .row .subcribe_input {
-  text-align: center;
+body footer .subcribe .container .row .subcribe_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-body footer .subcribe .row .subcribe_input input {
+body footer .subcribe .container .row .subcribe_input input {
   height: 40px;
+  width: 75%;
+  border-width: 0;
+  border-style: none;
+  padding: 0 10px;
+  outline: none;
 }
 
-body footer .subcribe .row .subcribe_input button {
+body footer .subcribe .container .row .subcribe_input button {
+  width: 25%;
   height: 40px;
+  outline: none;
   border: none;
   font-family: Avenir Next;
   font-style: normal;
@@ -229,6 +585,10 @@ body footer .subcribe .row .subcribe_input button {
   text-transform: uppercase;
   color: #FFFFFF;
   background: #3F3F3F;
+}
+
+body footer .subcribe .container .row .subcribe_input button:hover {
+  background-color: #969696;
 }
 
 body footer .about {

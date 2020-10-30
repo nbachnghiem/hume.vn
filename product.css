@@ -1,0 +1,476 @@
+@media screen and (max-width: 1200px) {
+  footer .subcribe .container .row .subcribe_title {
+    text-align: center !important;
+  }
+}
+
+body {
+  line-height: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+body img {
+  width: 100%;
+}
+
+body .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+body header {
+  padding-bottom: 24px;
+  -webkit-box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
+          box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
+  z-index: 1000;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+body header .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  text-align: center;
+}
+
+body header .top h1 {
+  margin: 0 auto;
+}
+
+body header .top .topItems {
+  position: absolute;
+  right: 154px;
+  top: 50%;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+body header .top .topItems ul {
+  list-style: none;
+  margin: auto 0 auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+body header .top .topItems ul li {
+  padding: 0 10px 0 10px;
+}
+
+body header .nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .nav .row .nav_item {
+  text-align: center;
+}
+
+body header .nav .row .nav_item a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #101010;
+}
+
+body header .nav .row .nav_item a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+body header .nav .row .nav_item a:hover + a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ff0000;
+}
+
+body header .nav .row .nav_item a:hover + .menu {
+  z-index: 9999999999;
+  display: none !important;
+}
+
+body header .nav .row .nav_item .product_hover:hover + .menu {
+  z-index: 9999999999;
+  display: none !important;
+}
+
+body header .menu {
+  margin-top: 24px;
+  z-index: 9999999999;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
+          box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+body header .menu .row {
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .menu .row .menu_items {
+  margin-top: 14px;
+}
+
+body header .menu .row .menu_items h1 {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #101010;
+}
+
+body header .menu .row .menu_items h2 {
+  margin-top: 13px;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #101010;
+}
+
+body header .menu .row .menu_items a {
+  margin-top: 8px;
+  display: block;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #101010;
+}
+
+body header .menu .row .menu_items img {
+  cursor: pointer;
+}
+
+body .top_banner .top_banner_content {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+body .top_banner .top_banner_content h1 {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 55px;
+  color: #101010;
+}
+
+body .top_banner .top_banner_content p {
+  margin-top: 18px;
+  width: 464px;
+  height: 110px;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5D5D5D;
+}
+
+body .top_banner .top_banner_content button {
+  margin-top: 30px;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  width: 171px;
+  height: 50px;
+  background: #101010;
+}
+
+body .top_banner .top_banner_content button:hover {
+  background-color: #969696;
+}
+
+body .bottom_banner {
+  margin-top: 63px;
+}
+
+body .breadcumb ul {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+body .breadcumb ul li {
+  display: inline;
+  color: #7A7A7A;
+}
+
+body .breadcumb ul li a {
+  color: black;
+}
+
+body .breadcumb ul li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+body .breadcumb ul li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+body .flash_sale .flash_sale_content .row .time_countdown {
+  margin: auto 0 auto auto;
+}
+
+body .flash_sale .flash_sale_content .row .time_countdown .time_countdown_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .flash_sale .flash_sale_content .row .time_countdown .time_countdown_content p {
+  padding-right: 11px;
+  margin: auto 0;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #101010;
+}
+
+body .flash_sale .flash_sale_content .row .time_countdown .time_countdown_content h2 {
+  margin: 0 2.5px;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background-color: black;
+  font-family: Bai Jamjuree;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+body .flash_sale .flash_sale_content .row .time_countdown .time_countdown_content span {
+  padding: 4px 10px;
+  font-family: Bai Jamjuree;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+body .flash_sale .row {
+  text-align: left;
+  margin: 0 auto 0 auto;
+}
+
+body .flash_sale .row .item_product_list {
+  margin-top: 37px;
+}
+
+body .flash_sale .row .item_product_list .product_title {
+  margin-top: 17px;
+}
+
+body .flash_sale .row .item_product_list .product_title a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #101010;
+  text-decoration: none;
+}
+
+body .flash_sale .row .item_product_list .product_title .sale_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .flash_sale .row .item_product_list .product_title .sale_price p {
+  margin: 8px 0 0 0;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: #F64E4E;
+}
+
+body .flash_sale .row .item_product_list .product_title .sale_price span {
+  margin: auto 0 0 14px;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #7A7A7A;
+}
+
+body .flash_sale .row .item_product_list .product_title .sale_progress_bar {
+  margin-top: 12px;
+  width: 100%;
+  height: 6px;
+  background-color: #EDEDED;
+}
+
+body .flash_sale .row .item_product_list .product_title p {
+  margin-top: 8px;
+  font-family: Avenir Next;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #5E5E5E;
+}
+
+body footer .subcribe {
+  background-color: #101010;
+}
+
+body footer .subcribe .container {
+  padding: 20px 0;
+}
+
+body footer .subcribe .container .row {
+  margin: auto 0;
+}
+
+body footer .subcribe .container .row .subcribe_title {
+  margin: auto 0;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+body footer .subcribe .container .row .subcribe_title a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+body footer .subcribe .container .row .subcribe_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .subcribe .container .row .subcribe_input input {
+  height: 40px;
+  width: 75%;
+  border-width: 0;
+  border-style: none;
+  padding: 0 10px;
+  outline: none;
+}
+
+body footer .subcribe .container .row .subcribe_input button {
+  width: 25%;
+  height: 40px;
+  outline: none;
+  border: none;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #3F3F3F;
+}
+
+body footer .subcribe .container .row .subcribe_input button:hover {
+  background-color: #969696;
+}
+
+body footer .about {
+  margin: 67px auto 0 auto;
+  width: 80%;
+}
+
+body footer .about ul {
+  list-style: none;
+  padding: 0;
+}
+
+body footer .about h1 {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+body footer .about a {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #2A2A2A;
+}
+
+body footer .copyright {
+  margin-top: 72px;
+  background: #F3F3F3;
+  text-align: center;
+  height: 60px;
+}
+
+body footer .copyright div {
+  padding: 20px;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #5F5F5F;
+}
+/*# sourceMappingURL=product.css.map */

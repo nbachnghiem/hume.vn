@@ -16,7 +16,9 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="./styles_product_detail.css">
+    <link rel="stylesheet" href="./product.css">
+
+    <link href="https://fonts.cdnfonts.com/css/bai-jamjuree" rel="stylesheet">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
@@ -105,6 +107,14 @@
                 </div>
             </div>
         </header>
+        <section class="top_banner">
+            <div class="top_banner_content">
+                <h1>Denim Collection</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a, odio amet, fermentum. Enim velit fringilla vehicula auctor vulputate aliquet sit. Venenatis, mi lectus sit justo pretium. Sit eget est</p>
+                <button>Xem ngay</button>
+            </div>
+            <img src="Images/top_banner.png">
+        </section>
         <section class="breadcumb container">
             <ul>
                 <li><a href="#">Trang chủ</a></li>
@@ -113,92 +123,27 @@
                 <li>Áo len tay ngắn xù bông</li>
             </ul>
         </section>
-        <section class="product_detail container">
-            <di
-            v class="row">
-                <div class="image_detail col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                    <img class="side_images" style="margin: 0;" src="Images/image_detail_1.png" alt="">
-                    <img class="side_images" src="Images/image_detail_1.png" alt="">
-                    <img class="side_images" src="Images/image_detail_1.png" alt="">
-                    <img class="side_images" src="Images/image_detail_1.png" alt="">
-                </div>
-                <div class="zoom_image col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <img src="Images/image_detail_1.png" alt="">
-                </div>
-                <div class="specifications_detail col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                    <div class="title_content">
-                        <div class="product_title">
-                            <h1>Áo len tay ngắn xù bông</h1>
-                            <div class="tag">Bán chạy</div>
-                        </div>
-                        <p>SKU:23200925925</p>
-                        <h2>325,000 đ</h2>
+        <section class="flash_sale container">
+            <div class="flash_sale_content">
+                <div class="row">
+                    <div class="title col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h1>FLASHSALE</h1>
                     </div>
-                    <div class="color_content">
-                        <P>Chọn màu</P>
-                        <button style="background-color:white;"></button>
-                        <button style="background-color: gray;"></button>
-                        <button style="background-color: black;"></button>
-                        <button style="background-color: dodgerblue;"></button>
-                    </div>
-                    <div class="size_ccontent">
-                        <div class="size">
-                            <P>Chọn size</P>
-                            <button>XS</button>
-                            <button>S</button>
-                            <button>M</button>
-                            <button>L</button>
-                            <button>XL</button>
+                    <div class="time_countdown col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="time_countdown_content">
+                            <p>Kết thúc sau</p>
+                            <h2>1</h2>
+                            <h2>1</h2>
+                            <span>:</span>
+                            <h2>3</h2>
+                            <h2>8</h2>
+                            <span>:</span>
+                            <h2>4</h2>
+                            <h2>9</h2>
                         </div>
-                        <div class="instruct">
-                            <a href="#">Hướng dẫn chọn size</a>
-                        </div>
-                    </div>
-                    <div class="add_to_cart">
-                        <div class="btn">
-                            <button class="btn_add">THÊM VÀO GIỎ HÀNG</button>                      
-                        </div>
-                    </div>
-                    <div class="delivery_border">
-                        <div class="delivery">
-                            <div class="row_1">
-                                <div class="col_1">
-                                    <i class="material-icons" style="font-size:18px;">local_shipping</i>
-                                </div>
-                                <div class="col_2">
-                                    <h1>
-                                        Miễn phí vận chuyển
-                                    </h1>
-                                    <p>
-                                        Giao hàng miễn phí với mức giá cố định cho các đơn hàng trên 499.000₫<br>
-                                        Giao hàng dự kiến vào ngày 16/11/2020.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row_2">
-                                <div class="col_1">
-                                    <i class="material-icons" style="font-size:18px">attach_money</i>
-                                </div>
-                                <div class="col_2">
-                                    <h1>
-                                        Chính sách hoàn trả
-                                    </h1>
-                                    <a href="#">
-                                        Tìm hiểu thêm
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product_infomation">
-                        <P>Thông tin sản phẩm</P>
-                        <i class="material-icons" style="font-size:14px">expand_more</i>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="reccomend_products">
-            <h1>Sản phẩm tương tự</h1>
             <div class="row container">
                 <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
                     <div class="product_photo">
@@ -208,10 +153,16 @@
                     </div>
                     <div class="product_title">
                         <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
+                        <div class="sale_price">
+                            <p>350,000đ</p>
+                            <span><del>400,000 đ</del></span>
+                        </div>
+                        <div class="sale_progress_bar">
+
+                        </div>
+                        <p>Đã bán 350</p>
                     </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                </div><div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
                     <div class="product_photo">
                         <a href="#" class="product_url">
                             <img width="100%" src="Images/productImg_1.png">
@@ -219,10 +170,16 @@
                     </div>
                     <div class="product_title">
                         <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
+                        <div class="sale_price">
+                            <p>350,000đ</p>
+                            <span><del>400,000 đ</del></span>
+                        </div>
+                        <div class="sale_progress_bar">
+
+                        </div>
+                        <p>Đã bán 350</p>
                     </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                </div><div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
                     <div class="product_photo">
                         <a href="#" class="product_url">
                             <img width="100%" src="Images/productImg_1.png">
@@ -230,10 +187,16 @@
                     </div>
                     <div class="product_title">
                         <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
+                        <div class="sale_price">
+                            <p>350,000đ</p>
+                            <span><del>400,000 đ</del></span>
+                        </div>
+                        <div class="sale_progress_bar">
+
+                        </div>
+                        <p>Đã bán 350</p>
                     </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                </div><div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
                     <div class="product_photo">
                         <a href="#" class="product_url">
                             <img width="100%" src="Images/productImg_1.png">
@@ -241,95 +204,14 @@
                     </div>
                     <div class="product_title">
                         <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
+                        <div class="sale_price">
+                            <p>350,000đ</p>
+                            <span><del>400,000 đ</del></span>
+                        </div>
+                        <div class="sale_progress_bar">
+
+                        </div>
+                        <p>Đã bán 350</p>
                     </div>
                 </div>
             </div>
