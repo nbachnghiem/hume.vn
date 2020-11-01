@@ -1,20 +1,30 @@
 @media screen and (max-width: 1200px) {
+  header .nav .row .nav_item .menu {
+    width: 400% !important;
+    left: -50%;
+  }
   footer .subcribe .container .row .subcribe_title {
     text-align: center !important;
   }
 }
 
-@media screen and (max-width: 576px) {
-  header .top h1 {
-    margin: 0 10px !important;
-    width: 100%;
+@media screen and (max-width: 992px) {
+  header .nav .row .nav_item .menu {
+    width: 500% !important;
+    left: -50%;
   }
-  header .top .topItems {
+}
+
+@media screen and (max-width: 768px) {
+  header .nav .row .nav_item .menu {
+    width: 200% !important;
+    left: -50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .nav .row .nav_item .menu {
     width: 100% !important;
-    top: 500px;
-    right: 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
   .product_detail .row .image_detail {
     -webkit-box-pack: center;
@@ -40,6 +50,10 @@
   .specifications_detail {
     margin-top: 20px;
   }
+}
+
+#product_hover:hover #menu {
+  display: block !important;
 }
 
 body {
@@ -75,10 +89,11 @@ body header .top {
       flex-wrap: wrap;
   position: relative;
   text-align: center;
+  height: 89px;
 }
 
 body header .top h1 {
-  margin: 0 auto;
+  margin: auto auto;
 }
 
 body header .top .topItems {
@@ -109,6 +124,7 @@ body header .nav {
 }
 
 body header .nav .row .nav_item {
+  position: relative;
   text-align: center;
 }
 
@@ -126,28 +142,15 @@ body header .nav .row .nav_item a:hover {
   border-bottom: 2px solid black;
 }
 
-body header .nav .row .nav_item a:hover + a {
-  font-family: Avenir Next;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ff0000;
-}
-
-body header .nav .row .nav_item a:hover + .menu {
-  z-index: 9999999999;
-  display: none !important;
-}
-
-body header .nav .row .nav_item .product_hover:hover + .menu {
-  z-index: 9999999999;
-  display: none !important;
-}
-
-body header .menu {
-  margin-top: 24px;
-  z-index: 9999999999;
+body header .nav .row .nav_item .menu {
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 800%;
+  text-align: left;
+  padding: 22px 50px;
+  z-index: 999;
   background-color: white;
   -webkit-box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
           box-shadow: 0px 4px 10px rgba(166, 168, 173, 0.09);
@@ -156,21 +159,19 @@ body header .menu {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  display: none;
 }
 
-body header .menu .row {
-  margin-top: 22px;
+body header .nav .row .nav_item .menu .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header .menu .row .menu_items {
+body header .nav .row .nav_item .menu .row .menu_items {
   margin-top: 14px;
 }
 
-body header .menu .row .menu_items h1 {
+body header .nav .row .nav_item .menu .row .menu_items h1 {
   font-family: Avenir Next;
   font-style: normal;
   font-weight: 500;
@@ -180,7 +181,7 @@ body header .menu .row .menu_items h1 {
   color: #101010;
 }
 
-body header .menu .row .menu_items h2 {
+body header .nav .row .nav_item .menu .row .menu_items h2 {
   margin-top: 13px;
   font-family: Avenir Next;
   font-style: normal;
@@ -191,7 +192,11 @@ body header .menu .row .menu_items h2 {
   color: #101010;
 }
 
-body header .menu .row .menu_items a {
+body header .nav .row .nav_item .menu .row .menu_items img:hover {
+  border: 1px solid #9c9c9c;
+}
+
+body header .nav .row .nav_item .menu .row .menu_items a {
   margin-top: 8px;
   display: block;
   font-family: Avenir Next;
@@ -200,10 +205,20 @@ body header .menu .row .menu_items a {
   font-size: 15px;
   line-height: 20px;
   color: #101010;
+  border-bottom: 0;
 }
 
-body header .menu .row .menu_items img {
+body header .nav .row .nav_item .menu .row .menu_items a:hover {
+  color: #9c9c9c;
+}
+
+body header .nav .row .nav_item .menu .row .menu_items img {
   cursor: pointer;
+}
+
+body header .nav .row .nav_item:hover .menu {
+  pointer-events: auto;
+  opacity: 1;
 }
 
 body .breadcumb ul {
@@ -312,7 +327,12 @@ body .product_detail .row .specifications_detail .color_content button {
   height: 25px;
   border: 1px;
   border-radius: 50%;
-  border: 1px solid #EDEDED;
+  border: 1px solid #b1b1b1;
+  outline: none;
+}
+
+body .product_detail .row .specifications_detail .color_content button:hover {
+  border: 1px solid #000000;
 }
 
 body .product_detail .row .specifications_detail .size_ccontent .size p {
@@ -328,9 +348,14 @@ body .product_detail .row .specifications_detail .size_ccontent .size button {
   width: 40px;
   height: 40px;
   background: #F8F8F8;
-  border: 0.5px solid #707070;
+  border: 0.5px solid #444444;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
+}
+
+body .product_detail .row .specifications_detail .size_ccontent .size button:hover {
+  background-color: #EDEDED;
 }
 
 body .product_detail .row .specifications_detail .size_ccontent .instruct {
@@ -338,11 +363,16 @@ body .product_detail .row .specifications_detail .size_ccontent .instruct {
 }
 
 body .product_detail .row .specifications_detail .size_ccontent .instruct a {
+  text-decoration: none;
   font-family: Avenir Next;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   color: #0684E0;
+}
+
+body .product_detail .row .specifications_detail .size_ccontent .instruct a:hover {
+  color: #00375e;
 }
 
 body .product_detail .row .specifications_detail .add_to_cart {
@@ -366,6 +396,11 @@ body .product_detail .row .specifications_detail .add_to_cart .btn .btn_add {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FFFFFF;
+  outline: none;
+}
+
+body .product_detail .row .specifications_detail .add_to_cart .btn .btn_add:hover {
+  background-color: #9e9e9e;
 }
 
 body .product_detail .row .specifications_detail .delivery_border {
@@ -500,30 +535,18 @@ body .reccomend_products .row .item_product_list .product_title p {
   color: #101010;
 }
 
-body .reccomend_products button {
-  margin-top: 63px;
-  width: 257px;
-  height: 56px;
-  border: none;
-  background: #101010;
-  font-family: Avenir Next;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #FFFFFF;
+body .reccomend_products .row .item_product_list .product_photo {
+  overflow: hidden;
 }
 
-body .reccomend_products button:hover {
-  color: #101010;
-  background: #FFFFFF;
-  border: 1.5px solid #101010;
+body .reccomend_products .row .item_product_list .product_photo:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 body .bottom_banner {
+  max-width: 1920px;
+  padding: 0;
   margin-top: 63px;
 }
 
@@ -541,7 +564,7 @@ body footer .subcribe .container .row {
 
 body footer .subcribe .container .row .subcribe_title {
   margin: auto 0;
-  text-align: right;
+  text-align: center;
   color: #FFFFFF;
 }
 
@@ -638,4 +661,4 @@ body footer .copyright div {
   letter-spacing: 0.1em;
   color: #5F5F5F;
 }
-/*# sourceMappingURL=styles_product_detail.css.map */
+/*# sourceMappingURL=product_detail.css.map */
