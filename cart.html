@@ -16,7 +16,9 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="./product_detail.css">
+    <link rel="stylesheet" href="./cart.css">
+
+    <link href="https://fonts.cdnfonts.com/css/bai-jamjuree" rel="stylesheet">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
@@ -37,7 +39,7 @@
                             <a href="#"><img src="Images/favorite.png"/></a>
                         </li>
                         <li>
-                            <a href="cart.html"><img src="Images/cart.png"/></a>
+                            <a href="#"><img src="Images/cart.png"/></a>
                         </li>
                     </ul>
                 </div>
@@ -108,244 +110,206 @@
         <section class="breadcumb container">
             <ul>
                 <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Sản phẩm</a></li>
-                <li><a href="#">Trang phục</a></li>
-                <li>Áo len tay ngắn xù bông</li>
+                <li>Giỏ hàng</li>
             </ul>
         </section>
-        <section class="product_detail container">
+        <section class="cart_content container">
+            <h1>GIỎ HÀNG</h1>
             <div class="row">
-                <div class="image_detail col-lg-1 col-md-2 col-sm-2">
-                    <img class="side_images" style="margin: 0;" src="Images/image_detail_1.png" alt="">
-                    <img class="side_images" src="Images/image_detail_1.png" alt="">
-                    <img class="side_images" src="Images/image_detail_1.png" alt="">
-                    <img class="side_images" src="Images/image_detail_1.png" alt="">
+                <div class="cart_info col-lg-8 col-md-12 col-sm-12 col-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Sản phẩm</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Tổng cộng</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">
+                                <button>
+                                    <i class="material-icons">close</i>
+                                </button>
+                            </th>
+                            <td>
+                                <div class="row">
+                                    <img src="Images/productImg_1.png">
+                                    <div class="product_info">
+                                        <h1>Áo sát nách xẻ lưng</h1>
+                                        <p>350,000đ x 1</p>
+                                        <div class="product_specifications">
+                                            <div class="product_size">
+                                                <select>
+                                                    <option>M</option>
+                                                    <option>S</option>
+                                                </select>
+                                            </div>
+                                            <div class="product_color">
+                                                <button style="background-color: #FFFFFF;"></button>
+                                                <button style="background-color: #E5E5E7;"></button>
+                                                <button style="background-color: #1C1C1C;"></button>
+                                                <button style="background-color: #285F99;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="amount_input">
+                                    <button style="font-size:12px"><i class="material-icons">remove</i></button>
+                                    <input type="text">
+                                    <button style="font-size:12px"><i class="material-icons">add</i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="price">
+                                    <span>350,000đ</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <button>
+                                    <i class="material-icons">close</i>
+                                </button>
+                            </th>
+                            <td>
+                                <div class="row">
+                                    <img src="Images/productImg_1.png">
+                                    <div class="product_info">
+                                        <h1>Áo sát nách xẻ lưng</h1>
+                                        <p>350,000đ x 1</p>
+                                        <div class="product_specifications">
+                                            <div class="product_size">
+                                                <select>
+                                                    <option>M</option>
+                                                    <option>S</option>
+                                                </select>
+                                            </div>
+                                            <div class="product_color">
+                                                <button style="background-color: #FFFFFF;"></button>
+                                                <button style="background-color: #E5E5E7;"></button>
+                                                <button style="background-color: #1C1C1C;"></button>
+                                                <button style="background-color: #285F99;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="amount_input">
+                                    <button style="font-size:12px"><i class="material-icons">remove</i></button>
+                                    <input type="text">
+                                    <button style="font-size:12px"><i class="material-icons">add</i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="price">
+                                    <span>350,000đ</span>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="total_price">
+                        <p>Tạm tính:</p>
+                        <span>700,000đ</span>
+                    </div>
                 </div>
-                <div class="zoom_image col-lg-6 col-md-5 col-sm-10">
-                    <img src="Images/image_detail_1.png" alt="">
-                </div>
-                <div class="specifications_detail col-lg-5 col-md-5 col-sm-12">
-                    <div class="title_content">
-                        <div class="product_title">
-                            <h1>Áo len tay ngắn xù bông</h1>
-                            <div class="tag">Bán chạy</div>
+                <div class="payment col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="payment_border">
+                        <div class="payment_title">
+                            <h1>
+                                THANH TOÁN
+                            </h1>
                         </div>
-                        <p>SKU:23200925925</p>
-                        <h2>325,000 đ</h2>
-                    </div>
-                    <div class="color_content">
-                        <P>Chọn màu</P>
-                        <button style="background-color:white;"></button>
-                        <button style="background-color: gray;"></button>
-                        <button style="background-color: black;"></button>
-                        <button style="background-color: dodgerblue;"></button>
-                    </div>
-                    <div class="size_content">
-                        <div class="size">
-                            <P>Chọn size</P>
-                            <button>XS</button>
-                            <button>S</button>
-                            <button>M</button>
-                            <button>L</button>
-                            <button>XL</button>
-                        </div>
-                        <div class="instruct">
-                            <a href="#">Hướng dẫn chọn size</a>
-                        </div>
-                    </div>
-                    <div class="add_to_cart">
-                        <div class="btn">
-                            <button class="btn_add">THÊM VÀO GIỎ HÀNG</button>                      
-                        </div>
-                    </div>
-                    <div class="delivery_border">
-                        <div class="delivery">
-                            <div class="row_1">
-                                <div class="col_1">
-                                    <i class="material-icons" style="font-size:18px;">local_shipping</i>
-                                </div>
-                                <div class="col_2">
-                                    <h1>
-                                        Miễn phí vận chuyển
-                                    </h1>
-                                    <p>
-                                        Giao hàng miễn phí với mức giá cố định cho các đơn hàng trên 499.000₫<br>
-                                        Giao hàng dự kiến vào ngày 16/11/2020.
-                                    </p>
-                                </div>
+                        <div class="payment_detail">
+                            <div class="col_1">
+                                <p>Tổng cộng:</p>
+                                <p>Phí vận chuyển:</p>
+                                <p>Thuế</p>
                             </div>
-                            <div class="row_2">
-                                <div class="col_1">
-                                    <i class="material-icons" style="font-size:18px">attach_money</i>
-                                </div>
-                                <div class="col_2">
-                                    <h1>
-                                        Chính sách hoàn trả
-                                    </h1>
-                                    <a href="#">
-                                        Tìm hiểu thêm
-                                    </a>
-                                </div>
+                            <div class="col_2">
+                                <p>700,00đ</p>
+                                <p>20,00đ</p>
+                                <p>---</p>
+                            </div>
+                        </div>
+                        <div class="payment_total">
+                            <div class="col_1">
+                                <p>Thành tiền</p>
+                            </div>
+                            <div class="col_2">
+                                <p>720,000đ</p>
                             </div>
                         </div>
                     </div>
-                    <div class="product_infomation">
-                        <P>Thông tin sản phẩm</P>
-                        <i class="material-icons" style="font-size:14px">expand_more</i>
-                    </div>
+                    <button>TIẾN HÀNH THANH TOÁN</button>
                 </div>
             </div>
         </section>
-        <section class="reccomend_products">
-            <h1>Sản phẩm tương tự</h1>
+        <section class="recently_viewed_products">
+            <h1>Sản phẩm vừa xem</h1>
             <div class="row container">
                 <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="product_photo">
-                        <a href="#" class="product_url">
+                        <a href="product-detail.html" class="product_url">
                             <img width="100%" src="Images/productImg_1.png">
                         </a>
                     </div>
                     <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
+                        <a href="product-detail.html" >Quần suông cách điệu</a>
                         <p>350,000đ</p>
                     </div>
                 </div>
                 <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="product_photo">
-                        <a href="#" class="product_url">
+                        <a href="product-detail.html" class="product_url">
                             <img width="100%" src="Images/productImg_1.png">
                         </a>
                     </div>
                     <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
+                        <a href="product-detail.html" >Quần suông cách điệu</a>
                         <p>350,000đ</p>
                     </div>
                 </div>
                 <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="product_photo">
-                        <a href="#" class="product_url">
+                        <a href="product-detail.html" class="product_url">
                             <img width="100%" src="Images/productImg_1.png">
                         </a>
                     </div>
                     <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
+                        <a href="product-detail.html" >Quần suông cách điệu</a>
                         <p>350,000đ</p>
                     </div>
                 </div>
                 <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="product_photo">
-                        <a href="#" class="product_url">
+                        <a href="product-detail.html" class="product_url">
                             <img width="100%" src="Images/productImg_1.png">
                         </a>
                     </div>
                     <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
-                        <p>350,000đ</p>
-                    </div>
-                </div>
-                <div class="item_product_list col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="product_photo">
-                        <a href="#" class="product_url">
-                            <img width="100%" src="Images/productImg_1.png">
-                        </a>
-                    </div>
-                    <div class="product_title">
-                        <a href="#" >Quần suông cách điệu</a>
+                        <a href="product-detail.html" >Quần suông cách điệu</a>
                         <p>350,000đ</p>
                     </div>
                 </div>
             </div>
+
         </section>
-        <section class="bottom_banner container">
-            <img src="Images/bottom_banner.png"/>
-        </section>
-        <footer>
+        <footer >
             <div class="subcribe">
                 <div class="container">
                     <div class="row">
-                        <div class="subcribe_title col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="subcribe_title col-lg-6 col-md-6 col-sm-12">
                                 <a>
                                     Nhận thông tin khuyến mãi mới nhất từ Currie Wardrobe
                                 </a>
                         </div>
-                        <div class="subcribe_input col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="subcribe_input col-lg-6 col-md-6 col-sm-12">
                             <input type="text" placeholder="Nhập địa chỉ email">
                             <button>ĐĂNG KÝ</button>
                         </div>
@@ -354,7 +318,7 @@
             </div>
             <div class="about">
                 <div class="row">
-                    <div class="contact_information col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div class="contact_information col-lg-3 col-md-6 col-sm-6">
                         <h1 class="shop_name">Currie Wardrobe</h1>
                         <ul>
                             <li>
@@ -371,7 +335,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="introduce col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div class="introduce col-lg-3 col-md-6 col-sm-6">
                         <h1>VỀ CURRIE WARDROPE</h1>
                         <ul>
                             <li>
@@ -385,7 +349,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="support col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div class="support col-lg-3 col-md-6 col-sm-6">
                         <h1>HỖ TRỢ KHÁCH HÀNG</h1>
                         <ul>
                             <li>
@@ -411,7 +375,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="connect col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div class="connect col-lg-3 col-md-6 col-sm-6">
                         <h1>KẾT NỐI</h1>
                         <ul>
                             <li>
@@ -429,14 +393,5 @@
             </div>
         </footer>
     </div>
-</body>
-<script>
-    function showDropdown() {
-        document.getElementById("menu").style.display = "block";
-        document.getElementById("menu").style.width = "100%";
-    }
-    function hideDropdown() {
-        document.getElementById("menu").style.display = "none";
-    }
-</script>
+    </body>
 </html>

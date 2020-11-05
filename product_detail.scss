@@ -1,16 +1,4 @@
-@media screen and (max-width: 1200px){
-    header{
-        .nav{
-            .row{
-                .nav_item{
-                    .menu{
-                        width: 400% !important;
-                        left: -50%;
-                    }
-                }
-            }
-        }
-    }
+@media screen and (max-width: 1199.98px){
     footer{
         .subcribe{
             .container{
@@ -22,8 +10,37 @@
             }
         }
     }
+    header{
+        .top{
+            display: block !important;
+            text-align: center;
+            height: 89px;
+            h1 {
+                margin: auto auto;
+            }
+            .topItems{
+                position: relative !important;
+                right: 0 !important;
+                top: 25% !important;
+                ul{
+                    justify-content: center;
+                }
+            }
+        }
+        .nav{
+            .row{
+                .nav_item{
+                    .menu{
+                        width: 400% !important;
+                        left: -50%;
+                    }
+                }
+            }
+        }
+    }
 }
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 1440px) {
     header{
         .nav{
             .row{
@@ -37,7 +54,7 @@
         }
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 991.98px) {
     header{
         .nav{
             .row{
@@ -51,8 +68,34 @@
         }
     }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767.98px) {
     header{
+        .nav{
+            .row{
+                .nav_item{
+                    .menu{
+                        width: 200% !important;
+                        left: -50%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 575.98px) {
+    header{
+        .top {
+            h1 {
+                margin: 0 10px !important;
+                width: 100%;
+            }
+            .topItems{
+                width: 100% !important;
+                top: 500px;
+                right: 0;
+                transform: translateY(0);
+            }
+        }
         .nav{
             .row{
                 .nav_item{
@@ -86,9 +129,6 @@
     .specifications_detail{
         margin-top: 20px;
     }
-}
-#product_hover:hover #menu{
-    display: block !important;
 }
 body{
     line-height: normal;;
@@ -322,7 +362,7 @@ body{
                         border: 1px solid #000000;
                     }
                 }
-                .size_ccontent{
+                .size_content{
                     .size{
                         p{
                             margin-top: 14px;
@@ -379,7 +419,9 @@ body{
                             outline: none;
                         }
                         .btn_add:hover {
-                            background-color: #9e9e9e;
+                            background-color: #ffffff;
+                            border: 2px solid black;
+                            color: black;
                         }
                     }
                 }
